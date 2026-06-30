@@ -16,6 +16,14 @@ export function Header() {
       initial='initial'
       animate='enter'
     >
+      <Image
+        src='/img/image.png'
+        className='object-contain md:scale-125'
+        fill={true}
+        sizes='100vw'
+        alt='Trinh Khang Ninh Banner'
+        unoptimized
+      />
       <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>
         <div className='select-none'>
           <h1 className='text-[max(9em,15vw)]'>

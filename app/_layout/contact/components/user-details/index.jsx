@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDownLeft } from 'lucide-react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { MagneticButton } from '@/components';
 
@@ -20,7 +20,7 @@ export function UserDetails({ transformX }) {
         <div className='flex items-center gap-8'>
           <ImageWrapper>
             <Image
-              src='/img/TheKas.png'
+              src='/img/image.png'
               className='rounded-full object-cover'
               fill={true}
               alt='Trinh Khang Ninh Profile Picture'
