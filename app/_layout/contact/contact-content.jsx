@@ -13,12 +13,12 @@ const faqs = [
   {
     question: 'What services do I offer?',
     answer:
-      'Fullstack Web Development, Frontend (React, Next.js), Backend (Node.js, Python), UI/UX Implementation, Database Design & API Development.',
+      'Fullstack Web Development, System Architecture Design, Frontend (React, Next.js, GSAP), Backend (Node.js, WebSockets), UI/UX Optimization, & API Development.',
   },
   {
     question: 'What is my tech stack?',
     answer:
-      'React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Tailwind CSS, TypeScript, Docker, Git & CI/CD pipelines.',
+      'JavaScript, TypeScript, React, Next.js, Node.js, Express, PostgreSQL, Supabase, Tailwind CSS, GSAP, Docker & Vercel.',
   },
   {
     question: 'How can we work together?',
@@ -134,6 +134,12 @@ export function ContactContent() {
                   trinhkhangninh1611@gmail.com
                 </a>
                 <a
+                  href='mailto:contact@pyspace.id.vn'
+                  className='text-base transition-opacity duration-300 hover:opacity-60'
+                >
+                  contact@pyspace.id.vn
+                </a>
+                <a
                   href='tel:+84852606710'
                   className='text-base transition-opacity duration-300 hover:opacity-60'
                 >
@@ -149,7 +155,7 @@ export function ContactContent() {
               <div className='flex flex-col gap-2'>
                 <p className='text-base'>Trinh Khang Ninh</p>
                 <p className='text-base'>Fullstack Web Developer</p>
-                <p className='text-base'>Location: Ho Chi Minh City, Vietnam</p>
+                <p className='text-base'>Location: Go Vap, Ho Chi Minh City</p>
               </div>
             </div>
 

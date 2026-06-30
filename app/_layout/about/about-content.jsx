@@ -8,21 +8,24 @@ import Link from 'next/link';
 import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 
 const phrase =
-  'I am a Fullstack Web Developer based in Vietnam, passionate about crafting digital experiences that merge clean code with impactful design.';
+  'Fullstack Web Developer with 2 years of experience specializing in designing complex system architectures and crafting smooth, highly interactive UI/UX experiences using React, Next.js, and GSAP.';
 
 const skills = [
-  { category: 'Frontend', items: 'React, Next.js, Vue.js, Tailwind CSS, GSAP, Framer Motion' },
-  { category: 'Backend', items: 'Node.js, Express, Python, Django, REST API, GraphQL' },
-  { category: 'Database', items: 'MongoDB, PostgreSQL, MySQL, Redis, Firebase' },
-  { category: 'DevOps', items: 'Docker, Git, CI/CD, Vercel, AWS, Linux' },
-  { category: 'Tools', items: 'Figma, VS Code, Postman, Jira, Notion' },
+  { category: 'Languages', items: 'JavaScript (2 years), TypeScript' },
+  { category: 'Frontend', items: 'React.js, Next.js, HTML5, CSS3, Tailwind CSS, Material UI, GSAP' },
+  { category: 'Backend', items: 'Node.js, Express.js, RESTful API, WebSocket' },
+  { category: 'Database', items: 'PostgreSQL, Supabase' },
+  { category: 'State Management', items: 'Redux, Zustand' },
+  { category: 'Tools', items: 'Git, GitHub, Postman, Vercel, Figma, Vite, Docker' },
 ];
 
 const projects = [
+  { name: 'Kingvieteducation', href: '#', role: 'Lead Fullstack Developer' },
+  { name: 'Vietnam Chess Federation', href: '#', role: 'System Architect & Developer' },
   { name: 'The KAS Website', href: 'https://thekas.vn', role: 'Fullstack Developer' },
   { name: 'Werewolf Online', href: 'https://game.masoi.vn', role: 'Fullstack Developer' },
-  { name: 'Online Tarot', href: 'https://tarot.thekas.vn', role: 'Fullstack Developer' },
   { name: 'INXIN.VN', href: 'https://inxin.vn', role: 'Fullstack Developer' },
+  { name: 'Online Tarot', href: 'https://tarot.thekas.vn', role: 'Fullstack Developer' },
   { name: 'BYDUNI', href: 'https://byduni.com', role: 'Fullstack Developer' },
 ];
 
@@ -100,10 +103,9 @@ export function AboutContent() {
           <div className='flex flex-col justify-end'>
             <ParallaxFade>
               <p className='text-base leading-relaxed text-background md:text-lg'>
-                I am Trinh Khang Ninh, a Fullstack Developer passionate about technology and innovation.
-                With experience developing various web projects from frontend to backend,
-                I always aim to create high-quality digital products,
-                optimize performance, and deliver the best user experiences.
+                I am Trinh Khang Ninh, a Fullstack Developer with 2 years of hands-on experience. 
+                I specialize in deep expertise across both front-end and back-end development within the Node.js ecosystem. 
+                My focus is always on creating high-quality digital products, from e-commerce platforms and performance-optimized landing pages to real-time web mini-games.
               </p>
             </ParallaxFade>
           </div>
