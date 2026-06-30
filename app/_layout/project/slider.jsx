@@ -62,6 +62,7 @@ export function ProjectSlider({ type, source }) {
         width: '25vw',
         minWidth: '250px',
         height: '20vw',
+        minHeight: '200px',
       }}
     >
       {image}
