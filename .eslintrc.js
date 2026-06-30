@@ -1,56 +1,61 @@
-{
-  "extends": [
+module.exports = {
+  extends: [
     "next/core-web-vitals",
     "plugin:import/recommended",
     "plugin:tailwindcss/recommended",
     "prettier"
   ],
-  "rules": {
+  parserOptions: {
+    babelOptions: {
+      presets: [require.resolve("next/babel")]
+    }
+  },
+  rules: {
     "sort-imports": [
       "error",
       {
-        "ignoreCase": true,
-        "ignoreDeclarationSort": true
+        ignoreCase: true,
+        ignoreDeclarationSort: true
       }
     ],
     "import/order": [
       "error",
       {
-        "groups": [
+        groups: [
           ["type", "object", "external", "builtin"],
           "internal",
           ["parent", "sibling", "index"]
         ],
-        "pathGroups": [
+        pathGroups: [
           {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
+            pattern: "react",
+            group: "external",
+            position: "before"
           },
           {
-            "pattern": "@/**",
-            "group": "internal"
+            pattern: "@/**",
+            group: "internal"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["internal", "react"],
+        pathGroupsExcludedImportTypes: ["internal", "react"],
         "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true
         }
       }
     ],
-    "import/no-unresolved": [0, { "commonjs": true, "amd": true }],
+    "import/no-unresolved": [0, { commonjs: true, amd: true }],
     "import/named": 2,
     "import/namespace": 2,
     "import/default": 2,
     "import/export": 2,
     "tailwindcss/no-custom-classname": "off"
   },
-  "settings": {
+  settings: {
     "import/extensions": [".js", ".jsx"],
     "import/resolver": {
-      "alias": true
+      alias: true
     }
   }
-}
+};
