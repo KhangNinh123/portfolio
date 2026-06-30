@@ -1,22 +1,27 @@
 export const thumbnailOptions = [
   {
-    href: '/fabric',
-    title: 'FABRIC™',
-    image: 'Dennis-Portfolio/images/hlz36eeb3ddfvqt9tex9',
+    href: 'https://thekas.vn',
+    title: 'The KAS Website',
+    image: '/img/TheKas.png',
   },
   {
-    href: '/aanstekelijk',
-    title: 'Aanstekelijk',
-    image: 'Dennis-Portfolio/images/aigt2q3xiqb8ovujzscc',
+    href: 'https://game.masoi.vn',
+    title: 'Werewolf Online',
+    image: '/img/Byduni.png', // Tạm thời dùng Byduni.png cho Masoi vì chưa có Masoi.png
   },
   {
-    href: '/base-create',
-    title: 'Base Create',
-    image: 'Dennis-Portfolio/images/ahuzarh793qmv9sdveyk',
+    href: 'https://tarot.thekas.vn',
+    title: 'Online Tarot',
+    image: '/img/Tarot.png',
   },
   {
-    href: '/avvr',
-    title: 'AVVR',
-    image: 'Dennis-Portfolio/images/pzychyr1ans60gqlevhg',
+    href: 'https://inxin.vn',
+    title: 'INXIN.VN',
+    image: '/img/Inxin.png',
   },
+  {
+    href: 'https://byduni.com',
+    title: 'BYDUNI',
+    image: '/img/Byduni.png',
+  }
 ];

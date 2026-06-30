@@ -1,18 +1,18 @@
 export const socialMedias = [
   {
-    href: 'https://www.awwwards.com/dennissnellenberg/',
-    title: 'Awwwards',
+    href: 'https://pyspace.id.vn',
+    title: 'Website',
   },
   {
-    href: 'https://www.instagram.com/codebydennis/',
-    title: 'Instagram',
+    href: 'https://github.com/',
+    title: 'GitHub',
   },
   {
-    href: 'https://dribbble.com/dennissnellenberg',
-    title: 'Dribbble',
+    href: 'mailto:contact@pyspace.id.vn',
+    title: 'Email',
   },
   {
-    href: 'https://www.linkedin.com/in/dennissnellenberg/',
+    href: 'https://www.linkedin.com/',
     title: 'LinkedIn',
   },
 ];

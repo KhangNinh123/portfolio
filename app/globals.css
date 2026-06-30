@@ -22,25 +22,11 @@
 @layer base {
   /* Firefox */
   * {
-    scrollbar-color: theme(colors.secondary.foreground)
-      theme(colors.secondary.DEFAULT);
+    scrollbar-width: none;
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: theme(width[1.5]);
-  }
-
-  *::-webkit-scrollbar-track {
-    background-color: theme(colors.secondary.DEFAULT);
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: theme(colors.secondary.foreground);
-    border-radius: theme(borderRadius.full);
-
-    &:hover {
-      background-color: theme(colors.secondary.DEFAULT);
-    }
+    display: none;
   }
 }

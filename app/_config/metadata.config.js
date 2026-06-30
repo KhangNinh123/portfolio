@@ -2,13 +2,13 @@
 export const rootMetadata = {
   metadataBase: new URL('https://dennis-snellenberg-portfolio.vercel.app/'),
   title: {
-    template: '%s | Dennis Snellenberg',
-    default: 'Dennis Snellenberg • Freelance Designer & Developer',
+    template: '%s | Trinh Khang Ninh',
+    default: 'Trinh Khang Ninh • Fullstack Web Developer',
   },
   description:
-    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
-  generator: 'Dennis Snellenberg',
-  applicationName: 'Dennis Snellenberg',
+    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+  generator: 'Trinh Khang Ninh',
+  applicationName: 'Trinh Khang Ninh',
   referrer: 'origin-when-cross-origin',
   keywords: ['Design', 'Develope', 'Freelance'],
   authors: [
@@ -18,11 +18,11 @@ export const rootMetadata = {
   publisher: 'Ali Bagheri',
   twitter: {
     card: 'summary_large_image',
-    title: 'Dennis Snellenberg',
+    title: 'Trinh Khang Ninh',
     description:
-      'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+      'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
     siteId: '1467726470533754880',
-    creator: '@AliBagheri2079',
+    creator: '@TrinhKhangNinh',
     creatorId: '1467726470533754880',
     images: {
       url: 'https://dennis-snellenberg-portfolio.vercel.app/screenshot.png',
