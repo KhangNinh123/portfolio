@@ -42,3 +42,9 @@
     bottom: 50%;
   }
 }
+
+@media (max-width: 1024px) {
+  .wrapper {
+    transform: scale(1) !important;
+  }
+}

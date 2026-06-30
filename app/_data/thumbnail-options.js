@@ -7,7 +7,7 @@ export const thumbnailOptions = [
   {
     href: 'https://game.masoi.vn',
     title: 'Werewolf Online',
-    image: '/img/Byduni.png', // Tạm thời dùng Byduni.png cho Masoi vì chưa có Masoi.png
+    image: '/img/Masoi.png',
   },
   {
     href: 'https://tarot.thekas.vn',
