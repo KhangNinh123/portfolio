@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MoveDownRight, Globe } from 'lucide-react';
+import { Globe, MoveDownRight } from 'lucide-react';
 import Image from 'next/image';
 
 import { ParallaxSlider } from '@/components';
