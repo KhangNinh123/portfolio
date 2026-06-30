@@ -8,6 +8,8 @@ import { useContactSlider } from '@/hooks';
 
 import { SocialInfo, UserDetails } from './components';
 
+export { ContactContent } from './contact-content';
+
 export function Contact() {
   /** @type {import('react').MutableRefObject<HTMLElement>} */
   const containerRef = useRef(null);

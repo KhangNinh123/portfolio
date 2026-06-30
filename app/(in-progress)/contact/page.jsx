@@ -1,17 +1,20 @@
-import { InProgress } from '@/components';
-import { Transition } from '@/layout';
+import { Contact, ContactContent, Navbar, Transition } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'Contact',
+  title: 'Contact | Trinh Khang Ninh',
   description:
-    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+    'Get in touch with Trinh Khang Ninh — Fullstack Web Developer based in Vietnam. Let\'s build something great together.',
 };
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <Transition>
-      <InProgress>Contact Page</InProgress>
+      <Navbar />
+      <main>
+        <ContactContent />
+      </main>
+      <Contact />
     </Transition>
   );
 }
