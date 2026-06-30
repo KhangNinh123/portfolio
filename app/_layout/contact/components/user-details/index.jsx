@@ -21,7 +21,7 @@ export function UserDetails({ transformX }) {
           <ImageWrapper>
             <Image
               src='/img/image.png'
-              className='rounded-full object-cover'
+              className='rounded-full object-cover bg-white'
               fill={true}
               alt='Trinh Khang Ninh Profile Picture'
               unoptimized

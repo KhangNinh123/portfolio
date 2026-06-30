@@ -1,4 +1,5 @@
 export const preloaderWords = [
+  'Xin chào',
   'Hello',
   'Bonjour',
   'Ciao',

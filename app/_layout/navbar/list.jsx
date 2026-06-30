@@ -8,7 +8,7 @@ import { navItems } from '@/data';
 import { randomId } from '@/utils';
 
 export function NavbarList() {
-  const items = navItems.slice(1).map(({ href, title }) => {
+  const items = navItems.map(({ href, title }) => {
     const id = randomId();
     return (
       <li key={id} className='group p-4'>

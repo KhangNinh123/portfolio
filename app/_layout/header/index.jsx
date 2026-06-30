@@ -6,12 +6,14 @@ import Image from 'next/image';
 
 import { ParallaxSlider } from '@/components';
 
+import { isFirstLoad } from '../transition';
 import { slideUp } from './variants';
 
 export function Header() {
   return (
     <motion.header
       className='relative h-screen overflow-hidden bg-secondary-foreground text-background'
+      custom={isFirstLoad}
       variants={slideUp}
       initial='initial'
       animate='enter'

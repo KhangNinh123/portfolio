@@ -13,15 +13,17 @@ import { fade, slideUp } from './variants';
 
 const MotionComponent = motion(Center);
 
-export function Preloader() {
+export function Preloader({ isFirstLoad = true }) {
   const [index, setIndex] = useState(0);
   const { width, height } = useDimensions();
 
   useTimeOut({
     callback: () => {
-      setIndex(prevIndex => prevIndex + 1);
+      if (index < preloaderWords.length - 1) {
+        setIndex(prevIndex => prevIndex + 1);
+      }
     },
-    duration: index === 0 ? 500 : 250,
+    duration: index === 0 ? 1200 : 250,
     deps: [index],
   });
 
@@ -53,15 +55,17 @@ export function Preloader() {
     >
       {width > 0 ? (
         <>
-          <MotionComponent
-            className='text-3xl text-background md:text-4xl'
-            variants={fade}
-            initial='initial'
-            animate='enter'
-          >
-            <Dot size={48} className='me-3' />
-            <p>{preloaderWords[index]}</p>
-          </MotionComponent>
+          {isFirstLoad && (
+            <MotionComponent
+              className='text-3xl text-background md:text-4xl'
+              variants={fade}
+              initial='initial'
+              animate='enter'
+            >
+              <Dot size={48} className='me-3' />
+              <p>{preloaderWords[index]}</p>
+            </MotionComponent>
+          )}
           <motion.svg className='absolute top-0 -z-10 h-[calc(100%+300px)] w-full'>
             <motion.path
               className='fill-foreground'

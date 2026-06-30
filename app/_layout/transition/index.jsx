@@ -9,6 +9,8 @@ import { useLenis, useTimeOut } from '@/hooks';
 
 import { Preloader } from './preloader';
 
+export let isFirstLoad = true;
+
 /** @param {import('react').PropsWithChildren<unknown>} */
 export function Transition({ children }) {
   const [isLoading, setLoading] = useState(true);
@@ -19,15 +21,18 @@ export function Transition({ children }) {
     callback: () => {
       setLoading(false);
       window.scrollTo(0, 0);
+      if (isFirstLoad) {
+        isFirstLoad = false;
+      }
     },
-    duration: 2000,
-    deps: [],
+    duration: isFirstLoad ? 3800 : 100,
+    deps: [pathname],
   });
 
   return (
     <div key={pathname} className='overflow-hidden'>
       <AnimatePresence mode='wait'>
-        {isLoading ? <Preloader /> : null}
+        {isLoading ? <Preloader isFirstLoad={isFirstLoad} /> : null}
       </AnimatePresence>
       {children}
     </div>

@@ -1,17 +1,20 @@
-import { InProgress } from '@/components';
-import { Transition } from '@/layout';
+import { AboutContent, Contact, Navbar, Transition } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'About',
+  title: 'About | Trinh Khang Ninh',
   description:
-    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+    'Trinh Khang Ninh — Fullstack Web Developer & Founder of Py Space. Based in Vietnam, building scalable web solutions.',
 };
 
 export default function About() {
   return (
     <Transition>
-      <InProgress>About Page</InProgress>
+      <Navbar />
+      <main>
+        <AboutContent />
+      </main>
+      <Contact />
     </Transition>
   );
 }

@@ -110,7 +110,7 @@ export function ContactContent() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className='flex flex-col items-start gap-6'>
-              <div className='relative h-24 w-24 overflow-hidden rounded-full'>
+              <div className='relative h-24 w-24 overflow-hidden rounded-full bg-white'>
                 <Image
                   src='/img/image.png'
                   className='object-cover'

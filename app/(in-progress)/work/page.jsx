@@ -1,17 +1,20 @@
-import { InProgress } from '@/components';
-import { Transition } from '@/layout';
+import { Contact, Navbar, Transition, WorkContent } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'Work',
+  title: 'Work | Trinh Khang Ninh',
   description:
-    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+    'A showcase of digital products, interactive websites, and e-commerce platforms developed by Trinh Khang Ninh.',
 };
 
 export default function Work() {
   return (
     <Transition>
-      <InProgress>Work Page</InProgress>
+      <Navbar />
+      <main>
+        <WorkContent />
+      </main>
+      <Contact />
     </Transition>
   );
 }
