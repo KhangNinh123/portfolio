@@ -1,19 +1,39 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 import Link from 'next/link';
 
 import { MagneticButton } from '@/components';
 import { socialMedias } from '@/data';
-import { randomId } from '@/utils';
 
 import { ListTitle } from './index.styled';
 
 export function SocialInfo() {
+  const [localTime, setLocalTime] = useState('GMT+7');
+
+  useEffect(() => {
+    const formatter = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Ho_Chi_Minh',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true,
+    });
+
+    const updateTime = () => {
+      setLocalTime(`${formatter.format(new Date())} GMT+7`);
+    };
+
+    updateTime();
+    const intervalId = window.setInterval(updateTime, 60_000);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
   const medias = socialMedias.map(({ href, title }) => {
-    const id = randomId();
     return (
       <li
-        key={id}
+        key={title}
         className='border-b border-solid border-b-transparent transition-all duration-300 ease-in-expo hover:border-b-border'
       >
         <Link href={href} target='_blank' rel='noopener' passHref>
@@ -29,12 +49,12 @@ export function SocialInfo() {
         <div className='flex gap-8'>
           <div>
             <ListTitle>Version</ListTitle>
-            <p className='mt-7'>2022 © Edition</p>
+            <p className='mt-7'>{new Date().getFullYear()} © Portfolio</p>
           </div>
           <div>
             <ListTitle>Local time</ListTitle>
             <p className='mt-7'>
-              <time>04:01 PM GMT+2</time>
+              <time>{localTime}</time>
             </p>
           </div>
         </div>

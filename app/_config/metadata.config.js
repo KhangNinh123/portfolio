@@ -1,42 +1,43 @@
 /** @type {import('next').Metadata} */
 export const rootMetadata = {
-  metadataBase: new URL('https://dennis-snellenberg-portfolio.vercel.app/'),
+  metadataBase: new URL('https://pyspace.id.vn/'),
   title: {
     template: '%s | Trinh Khang Ninh',
     default: 'Trinh Khang Ninh • Fullstack Web Developer',
   },
   description:
-    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+    'Fullstack web developer building production applications with React, Next.js, TypeScript, Node.js, PostgreSQL, MongoDB, and real-time technologies.',
   generator: 'Trinh Khang Ninh',
   applicationName: 'Trinh Khang Ninh',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Design', 'Develope', 'Freelance'],
-  authors: [
-    { name: 'Ali Bagheri', url: 'https://www.github.com/alibagheri2079' },
+  keywords: [
+    'Fullstack Development',
+    'UI/UX',
+    'Product Development',
+    'React',
+    'Next.js',
   ],
-  creator: 'Ali Bagheri',
-  publisher: 'Ali Bagheri',
+  authors: [{ name: 'Trinh Khang Ninh', url: 'https://pyspace.id.vn/' }],
+  creator: 'Trinh Khang Ninh',
+  publisher: 'Trinh Khang Ninh',
   twitter: {
     card: 'summary_large_image',
     title: 'Trinh Khang Ninh',
     description:
-      'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
-    siteId: '1467726470533754880',
-    creator: '@TrinhKhangNinh',
-    creatorId: '1467726470533754880',
+      'Fullstack web developer specializing in React, Next.js, Node.js, and production web applications.',
     images: {
-      url: 'https://dennis-snellenberg-portfolio.vercel.app/screenshot.png',
-      alt: 'Portfolio Screenshot',
+      url: '/img/TheKas.png',
+      alt: 'Trinh Khang Ninh portfolio preview',
     },
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    nocache: true,
+    nocache: false,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,

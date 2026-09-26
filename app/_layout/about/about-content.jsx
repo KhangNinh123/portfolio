@@ -8,25 +8,72 @@ import Link from 'next/link';
 import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 
 const phrase =
-  'Fullstack Web Developer with 2 years of experience specializing in designing complex system architectures and crafting smooth, highly interactive UI/UX experiences using React, Next.js, and GSAP.';
+  'I am a fullstack developer who enjoys turning messy ideas into web products people can actually use.';
 
 const skills = [
-  { category: 'Languages', items: 'JavaScript (2 years), TypeScript' },
-  { category: 'Frontend', items: 'React.js, Next.js, HTML5, CSS3, Tailwind CSS, Material UI, GSAP' },
-  { category: 'Backend', items: 'Node.js, Express.js, RESTful API, WebSocket' },
-  { category: 'Database', items: 'PostgreSQL, Supabase' },
+  {
+    category: 'Languages',
+    items: 'JavaScript, TypeScript, HTML5, CSS3',
+  },
+  {
+    category: 'Frontend',
+    items:
+      'React.js, Next.js, Tailwind CSS, Material UI, GSAP, responsive interfaces, reusable components',
+  },
+  {
+    category: 'Backend',
+    items:
+      'Node.js, Express.js, RESTful API, WebSocket, Supabase Edge Functions',
+  },
+  { category: 'Database', items: 'PostgreSQL, MongoDB, Supabase' },
   { category: 'State Management', items: 'Redux, Zustand' },
-  { category: 'Tools', items: 'Git, GitHub, Postman, Vercel, Figma, Vite, Docker' },
+  {
+    category: 'Quality & Delivery',
+    items: 'Postman, performance profiling, Git, GitHub, Docker, Vercel, Vite',
+  },
+  {
+    category: 'AI Coding Tools',
+    items:
+      'Claude Code, Cursor, Codex, Gemini for planning, debugging, refactoring, code review, and documentation',
+  },
+  {
+    category: 'UI/UX',
+    items:
+      'Figma, responsive design, interface prototyping, interaction design',
+  },
 ];
 
 const projects = [
-  { name: 'Kingvieteducation', href: '#', role: 'Lead Fullstack Developer' },
-  { name: 'Vietnam Chess Federation', href: '#', role: 'System Architect & Developer' },
-  { name: 'The KAS Website', href: 'https://thekas.vn', role: 'Fullstack Developer' },
-  { name: 'Werewolf Online', href: 'https://game.masoi.vn', role: 'Fullstack Developer' },
-  { name: 'INXIN.VN', href: 'https://inxin.vn', role: 'Fullstack Developer' },
-  { name: 'Online Tarot', href: 'https://tarot.thekas.vn', role: 'Fullstack Developer' },
-  { name: 'BYDUNI', href: 'https://byduni.com', role: 'Fullstack Developer' },
+  {
+    name: 'King Viet Education',
+    href: 'https://kingvietedu.vn/',
+    role: 'Fullstack Development · In progress',
+  },
+  {
+    name: 'The KAS Website',
+    href: 'https://thekas.vn',
+    role: 'Fullstack Development',
+  },
+  {
+    name: 'Werewolf Online',
+    href: 'https://game.masoi.vn',
+    role: 'System Architecture & Fullstack Development',
+  },
+  {
+    name: 'INXIN.VN',
+    href: 'https://inxin.vn',
+    role: 'Fullstack E-commerce Development',
+  },
+  {
+    name: 'Online Tarot',
+    href: 'https://tarot.thekas.vn',
+    role: 'Frontend, Backend & AI Integration',
+  },
+  {
+    name: 'BYDUNI',
+    href: 'https://byduni.com',
+    role: 'Fullstack Development',
+  },
 ];
 
 const containerVariants = {
@@ -66,7 +113,7 @@ export function AboutContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className='relative h-28 w-28 overflow-hidden rounded-full bg-white'>
+            <div className='relative size-28 overflow-hidden rounded-full bg-white'>
               <Image
                 src='/img/image.png'
                 className='object-cover'
@@ -103,9 +150,12 @@ export function AboutContent() {
           <div className='flex flex-col justify-end'>
             <ParallaxFade>
               <p className='text-base leading-relaxed text-background md:text-lg'>
-                I am Trinh Khang Ninh, a Fullstack Developer with 2 years of hands-on experience. 
-                I specialize in deep expertise across both front-end and back-end development within the Node.js ecosystem. 
-                My focus is always on creating high-quality digital products, from e-commerce platforms and performance-optimized landing pages to real-time web mini-games.
+                I am comfortable jumping between a polished interface and the
+                systems behind it. Over the past few years I have worked on
+                online stores, campaign sites, AI-powered features, and
+                real-time browser games. I care about the small interactions
+                people notice, as well as the code and infrastructure they never
+                have to think about.
               </p>
             </ParallaxFade>
           </div>
@@ -130,15 +180,15 @@ export function AboutContent() {
               creative space
             </h2>
             <p className='mb-6 text-base leading-relaxed text-background md:text-lg'>
-              <strong className='text-background'>Py Space</strong> is my personal brand and creative space where I
-              develop web products, share programming knowledge, and connect with the developer
-              community. &quot;Py&quot; is inspired by Python — my first favorite programming language,
-              while &quot;Space&quot; represents a free zone for limitless experimentation and creativity.
+              <strong className='text-background'>Py Space</strong> is my small
+              corner of the internet where I build ideas, share what I learn,
+              and experiment without needing a client brief. The name comes from
+              Python, the first language I really enjoyed, and the freedom I
+              want this space to have.
             </p>
             <p className='text-base leading-relaxed text-background md:text-lg'>
-              Through Py Space, I build real-world projects such as The KAS, Werewolf Online, Online Tarot,
-              INXIN.VN, and BYDUNI — each project marks a step forward in my journey to becoming a more
-              comprehensive developer.
+              It is also where I can try a new interaction, tool, or technical
+              approach before bringing the useful parts into real projects.
             </p>
           </motion.div>
 
@@ -270,9 +320,7 @@ export function AboutContent() {
                     {project.name}
                   </h3>
                 </div>
-                <span className='text-sm text-background'>
-                  {project.role}
-                </span>
+                <span className='text-sm text-background'>{project.role}</span>
               </a>
             </motion.div>
           ))}

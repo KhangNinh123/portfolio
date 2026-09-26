@@ -2,9 +2,9 @@ import { Contact, ContactContent, Navbar, Transition } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'Contact | Trinh Khang Ninh',
+  title: 'Contact',
   description:
-    'Get in touch with Trinh Khang Ninh — Fullstack Web Developer based in Vietnam. Let\'s build something great together.',
+    'Contact Trinh Khang Ninh, a fullstack web developer based in Vietnam and available for remote opportunities.',
 };
 
 export default function ContactPage() {

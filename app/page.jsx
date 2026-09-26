@@ -10,9 +10,9 @@ import {
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'Home | Trinh Khang Ninh',
+  title: 'Fullstack Web Developer',
   description:
-    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+    'Trinh Khang Ninh builds responsive, production-ready web applications with React, Next.js, TypeScript, Node.js, and real-time technologies.',
 };
 
 export default function Home() {

@@ -33,7 +33,11 @@ export function Header() {
           in Vietnam
         </p>
         <div className='flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full bg-gray-500/50'>
-          <Globe size={36} strokeWidth={1.25} className='animate-[spin_6s_linear_infinite]' />
+          <Globe
+            size={36}
+            strokeWidth={1.25}
+            className='animate-[spin_6s_linear_infinite]'
+          />
         </div>
       </div>
       <div className='relative flex h-full flex-col justify-end gap-2 md:flex-col-reverse md:justify-normal'>

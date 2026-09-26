@@ -7,28 +7,27 @@ import Link from 'next/link';
 
 import { MagneticButton } from '@/components';
 import { socialMedias } from '@/data';
-import { randomId } from '@/utils';
 
 const faqs = [
   {
-    question: 'What services do I offer?',
+    question: 'What do I build?',
     answer:
-      'Fullstack Web Development, System Architecture Design, Frontend (React, Next.js, GSAP), Backend (Node.js, WebSockets), UI/UX Optimization, & API Development.',
+      'Websites and web applications from end to end — the interface people use, the backend that powers it, and the integrations that connect everything together.',
   },
   {
-    question: 'What is my tech stack?',
+    question: 'What do I usually work with?',
     answer:
-      'JavaScript, TypeScript, React, Next.js, Node.js, Express, PostgreSQL, Supabase, Tailwind CSS, GSAP, Docker & Vercel.',
+      'Mostly JavaScript and TypeScript with React, Next.js, and Node.js. PostgreSQL, MongoDB, Supabase, WebSocket, GSAP, Docker, and Vercel often show up depending on the project.',
   },
   {
-    question: 'How can we work together?',
+    question: 'Do I use AI tools?',
     answer:
-      'Reach out via email or phone. I\'m open to freelance projects, full-time positions, and long-term collaborations.',
+      'Yes. Claude Code, Cursor, Codex, and Gemini help me explore approaches, debug, refactor, and document work. They speed up the loop, but I still review the code and own the final result.',
   },
   {
-    question: 'What is my development process?',
+    question: 'How do I approach a project?',
     answer:
-      'Discovery & Planning → Design & Prototyping → Development & Testing → Deployment & Maintenance. Transparent communication at every stage.',
+      'I begin by understanding the problem, choose the smallest sensible architecture, build in clear pieces, test the uncomfortable cases, and keep an eye on the product after launch.',
   },
   {
     question: 'Where am I based?',
@@ -79,7 +78,7 @@ export function ContactContent() {
             >
               {faqs.map((faq, index) => (
                 <motion.div
-                  key={randomId()}
+                  key={faq.question}
                   variants={itemVariants}
                   className='border-t border-muted-foreground/30 py-10'
                 >
@@ -110,7 +109,7 @@ export function ContactContent() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className='flex flex-col items-start gap-6'>
-              <div className='relative h-24 w-24 overflow-hidden rounded-full bg-white'>
+              <div className='relative size-24 overflow-hidden rounded-full bg-white'>
                 <Image
                   src='/img/image.png'
                   className='object-cover'
@@ -155,7 +154,7 @@ export function ContactContent() {
               <div className='flex flex-col gap-2'>
                 <p className='text-base'>Trinh Khang Ninh</p>
                 <p className='text-base'>Fullstack Web Developer</p>
-                <p className='text-base'>Location: Go Vap, Ho Chi Minh City</p>
+                <p className='text-base'>Ho Chi Minh City, Vietnam</p>
               </div>
             </div>
 

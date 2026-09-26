@@ -1,5 +1,10 @@
 export const thumbnailOptions = [
   {
+    href: 'https://kingvietedu.vn/',
+    title: 'King Viet Education',
+    image: '/img/KingVietEdu.png',
+  },
+  {
     href: 'https://thekas.vn',
     title: 'The KAS Website',
     image: '/img/TheKas.png',
@@ -23,5 +28,5 @@ export const thumbnailOptions = [
     href: 'https://byduni.com',
     title: 'BYDUNI',
     image: '/img/Byduni.png',
-  }
+  },
 ];

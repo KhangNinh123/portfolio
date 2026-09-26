@@ -20,7 +20,7 @@ export const ThumbnailModal = forwardRef(
     const items = thumbnailOptions.map(({ title, image }) => {
       const id = randomId();
       return (
-        <Center key={id} className='h-full w-full relative p-2'>
+        <Center key={id} className='relative size-full p-2'>
           <Image
             src={image}
             fill={true}
@@ -42,7 +42,7 @@ export const ThumbnailModal = forwardRef(
         {...props}
       >
         <div
-          className='relative h-full w-full'
+          className='relative size-full'
           style={{
             top: `${index * -100}%`,
             transition: 'top 0.5s cubic-bezier(0.76, 0, 0.24, 1)',

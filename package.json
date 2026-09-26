@@ -1,16 +1,17 @@
 {
-  "name": "dennis-snellenberg-portfolio",
-  "title": "Dennis Snellenberg • Freelance Designer & Developer",
-  "description": "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis",
+  "name": "trinh-khang-ninh-portfolio",
+  "title": "Trinh Khang Ninh • Fullstack Web Developer",
+  "description": "Portfolio of Trinh Khang Ninh, a fullstack web developer specializing in React, Next.js, Node.js, and production web applications.",
   "author": {
-    "name": "Ali Bagheri",
-    "email": "alibagheri2079.dev@gmail.com",
-    "url": "https://www.github.com/alibagheri2079"
+    "name": "Trinh Khang Ninh",
+    "email": "trinhkhangninh1611@gmail.com",
+    "url": "https://github.com/KhangNinh123"
   },
   "keywords": [
-    "Design",
-    "Develope",
-    "Freelance"
+    "Fullstack Development",
+    "UI/UX",
+    "Product Development",
+    "Next.js"
   ],
   "version": "0.1.0",
   "private": true,

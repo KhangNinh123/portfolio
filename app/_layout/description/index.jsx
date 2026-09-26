@@ -9,7 +9,7 @@ import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 import { Title, Wrapper } from './index.styled';
 
 const phrase =
-  'Crafting scalable and robust web solutions in the digital era. Together, we will build products that drive real impact. No shortcuts, always pushing technical boundaries.';
+  'I like building web experiences that feel simple on the surface and stay solid underneath.';
 
 export function Description() {
   return (
@@ -24,7 +24,9 @@ export function Description() {
         <div className='basis-7/12 lg:basis-3/12'>
           <ParallaxFade>
             <Balancer as='p' className='mt-2 text-base lg:text-lg'>
-              My expertise across both frontend and backend technologies allows me to bridge the gap between design and complex logic seamlessly.
+              Most days you will find me moving between React interfaces, Node
+              APIs, database queries, and whatever interesting problem needs to
+              be solved next.
             </Balancer>
           </ParallaxFade>
         </div>

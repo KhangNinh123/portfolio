@@ -4,7 +4,7 @@ export const socialMedias = [
     title: 'Website',
   },
   {
-    href: 'https://github.com/',
+    href: 'https://github.com/KhangNinh123',
     title: 'GitHub',
   },
   {
@@ -12,7 +12,7 @@ export const socialMedias = [
     title: 'Email',
   },
   {
-    href: 'https://www.linkedin.com/',
+    href: 'https://linkedin.com/in/KhangNinh123',
     title: 'LinkedIn',
   },
 ];

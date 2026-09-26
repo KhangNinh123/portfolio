@@ -21,7 +21,7 @@ export function UserDetails({ transformX }) {
           <ImageWrapper>
             <Image
               src='/img/image.png'
-              className='rounded-full object-cover bg-white'
+              className='rounded-full bg-white object-cover'
               fill={true}
               alt='Trinh Khang Ninh Profile Picture'
               unoptimized
@@ -39,7 +39,7 @@ export function UserDetails({ transformX }) {
 
       <Row>
         <div className='relative w-full'>
-          <div className='h-[1px] bg-muted-foreground' />
+          <div className='h-px bg-muted-foreground' />
           <div className='absolute right-0 top-0 z-20 -translate-x-1/2 -translate-y-1/2'>
             <motion.div style={{ x: transformX }}>
               <Link href='/contact' passHref>

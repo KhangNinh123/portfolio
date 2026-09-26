@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Image from 'next/image';
 
@@ -10,15 +10,37 @@ import { Center } from '@/components';
  * @param {Object} props
  * @param {'image' | 'video'} props.type
  * @param {string} props.source
+ * @param {string} [props.poster]
  */
-export function ProjectSlider({ type, source }) {
+export function ProjectSlider({ type, source, poster }) {
   const videoRef = useRef(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch((e) => console.log('Autoplay prevented:', e));
+    const video = videoRef.current;
+
+    if (!video || type !== 'video') return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px 0px', threshold: 0.01 },
+    );
+
+    observer.observe(video);
+
+    return () => observer.disconnect();
+  }, [type]);
+
+  useEffect(() => {
+    if (shouldLoad && videoRef.current) {
+      videoRef.current.play().catch(() => {});
     }
-  }, []);
+  }, [shouldLoad]);
 
   const image =
     type === 'image' ? (
@@ -34,30 +56,21 @@ export function ProjectSlider({ type, source }) {
     type === 'video' ? (
       <video
         ref={videoRef}
-        src={source}
+        src={shouldLoad ? source : undefined}
+        poster={poster}
+        preload={shouldLoad ? 'metadata' : 'none'}
         loop
         controls={false}
         muted
         autoPlay
         playsInline
-        onEnded={(e) => {
-          e.currentTarget.currentTime = 0;
-          e.currentTarget.play().catch(() => {});
-        }}
-        onTimeUpdate={(e) => {
-          const video = e.currentTarget;
-          if (video.duration && video.currentTime >= video.duration - 0.1) {
-            video.currentTime = 0;
-            video.play().catch(() => {});
-          }
-        }}
-        className='h-full w-full object-contain'
+        className='size-full object-contain'
       />
     ) : null;
 
   return (
     <Center
-      className='relative rounded overflow-hidden p-6 bg-[#e5e5e5]'
+      className='relative overflow-hidden rounded bg-[#e5e5e5] p-6'
       style={{
         width: '25vw',
         minWidth: '250px',

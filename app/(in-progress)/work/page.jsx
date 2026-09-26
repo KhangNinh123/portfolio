@@ -2,9 +2,9 @@ import { Contact, Navbar, Transition, WorkContent } from '@/layout';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: 'Work | Trinh Khang Ninh',
+  title: 'Work',
   description:
-    'A showcase of digital products, interactive websites, and e-commerce platforms developed by Trinh Khang Ninh.',
+    'Selected product work by Trinh Khang Ninh across responsive websites, e-commerce, real-time applications, and AI-enabled experiences.',
 };
 
 export default function Work() {

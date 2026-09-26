@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 
 import { projectOptions } from '@/data';
 import { useProjectSlider } from '@/hooks';
-import { randomId } from '@/utils';
 
 import { ProjectSlider } from './slider';
 
@@ -16,15 +15,27 @@ export function Project() {
   const { transformX1, transformX2, transformY } =
     useProjectSlider(containerRef);
 
-  const firstSlider = projectOptions.first.map(({ type, source }) => {
-    const id = randomId();
-    return <ProjectSlider key={id} type={type} source={source} />;
-  });
+  const firstSlider = projectOptions.first.map(
+    ({ type, source, poster }, index) => (
+      <ProjectSlider
+        key={`first-${source}-${index}`}
+        type={type}
+        source={source}
+        poster={poster}
+      />
+    ),
+  );
 
-  const secondSlider = projectOptions.second.map(({ type, source }) => {
-    const id = randomId();
-    return <ProjectSlider key={id} type={type} source={source} />;
-  });
+  const secondSlider = projectOptions.second.map(
+    ({ type, source, poster }, index) => (
+      <ProjectSlider
+        key={`second-${source}-${index}`}
+        type={type}
+        source={source}
+        poster={poster}
+      />
+    ),
+  );
 
   return (
     <section ref={containerRef} className='relative z-10 mt-14'>

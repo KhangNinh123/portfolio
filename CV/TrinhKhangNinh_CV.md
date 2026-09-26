@@ -1,145 +1,98 @@
-# **TRINH KHANG NINH**
+# TRINH KHANG NINH
 
-**Fullstack Web Developer**
+**Fullstack Web Developer | React, Next.js & Node.js**
 
-📞 0852 606 710 · ✉️ trinhkhangninh1611@gmail.com /
-contact@pyspace.id.vn 🌐 [pyspace.id.vn](https://pyspace.id.vn/) · 🐙
-[GitHub](https://github.com/KhangNinh123) · 💼
-[LinkedIn](https://linkedin.com/in/KhangNinh123)
+Ho Chi Minh City, Vietnam · Available for remote full-time work<br>
+Phone: +84 852 606 710 · Email: trinhkhangninh1611@gmail.com<br>
+[Portfolio](https://pyspace.id.vn/) · [GitHub](https://github.com/KhangNinh123) · [LinkedIn](https://linkedin.com/in/KhangNinh123)
 
-**Date of Birth:** November 16, 2003 **Address:** 256/19 Duong Quang
-Ham, Go Vap, Ho Chi Minh City
+---
 
-------------------------------------------------------------------------
+## Professional Summary
 
-## **Brief Introduction**
+Fullstack Web Developer with 2+ years of experience building and shipping production web applications with React, Next.js, TypeScript, Node.js, PostgreSQL, MongoDB, Supabase, REST APIs, and WebSocket. Experienced across frontend architecture, backend services, database integration, real-time features, performance optimization, and deployment. Owned the development and technical handover of 30 websites spanning landing pages, e-commerce platforms, and browser-based games. Uses Claude Code, Cursor, Codex, and Gemini as supporting tools for implementation planning, debugging, refactoring, code review, and technical documentation.
 
-Fullstack Web Developer with 2 years of hands-on experience specializing
-in designing complex system architectures and crafting smooth, highly
-interactive UI/UX experiences using React, Next.js, and GSAP. Proven
-track record across diverse web projects --- from e-commerce platforms
-and performance-optimized landing pages to real-time web mini-games and
-digital board game platforms (Werewolf Online).
+---
 
-Possessing deep expertise in both front-end and back-end development
-within the Node.js ecosystem. Currently architecting end-to-end systems
-for the Kingvieteducation educational platform and designing a
-state-level website system for the Vietnam Chess Federation.
+## Core Skills
 
-------------------------------------------------------------------------
+- **Languages:** JavaScript, TypeScript, HTML5, CSS3
+- **Frontend:** React.js, Next.js, Tailwind CSS, Material UI, GSAP, responsive interfaces, reusable components
+- **Backend:** Node.js, Express.js, RESTful APIs, WebSocket, Supabase Edge Functions
+- **Data & State:** PostgreSQL, MongoDB, Supabase, Redux, Zustand
+- **Quality & Delivery:** Postman, performance profiling, Git, GitHub, Docker, Vercel, Vite
+- **AI Coding Tools:** Claude Code, Cursor, Codex, Gemini for planning, debugging, refactoring, code review, and documentation
+- **UI/UX:** Figma, responsive design, interface prototyping, and interaction design
 
-## **Work Experience**
+---
 
-### Fullstack Web Developer - Partner Projects
+## Professional Experience
 
-*April 2026 - Present* \* **Kingvieteducation (Current Project):**
-Leading end-to-end web development for the Kingvieteducation educational
-platform. Building robust backend logic with Node.js and preparing to
-deploy with a highly optimized frontend interface. \* **Vietnam Chess
-Federation (Upcoming Project):** Selected to architect and develop the
-official website for the Vietnam Chess Federation --- a national-level
-project requiring an extremely secure and scalable web system to manage
-tournament information and large-scale public data.
+### Fullstack Web Developer — Partner Projects
 
-------------------------------------------------------------------------
+**April 2026 – Present**
 
-### Sole Fullstack Developer - The KAS
+- Leading end-to-end development of the [King Viet Education](https://kingvietedu.vn/) platform, from product requirements and responsive interface implementation to backend logic and deployment preparation.
+- Selected to design the technical architecture and develop the website system for the Vietnam Chess Federation, with a focus on maintainability, security, and structured public information.
+- Collaborating directly with project stakeholders to translate business requirements into product flows, reusable interfaces, and implementation plans.
 
-*April 2025 - March 2026*
+### Sole Fullstack Developer — The KAS
 
-The KAS is an ecosystem providing board game services and digital
-marketing products. Served as Sole Fullstack Developer, directly
-architecting, managing, and developing the entire technical
-infrastructure of **30 diverse websites** (landing pages, e-commerce
-platforms, and web mini-games). Notable projects:
+**April 2025 – March 2026**
 
--   **The KAS Website System:** Developed the core corporate landing
-    page with a strong focus on performance optimization and highly
-    interactive UI/UX to maximize user acquisition.
-    -   🔗 https://thekas.vn/
--   **Digital Board Game Platform (Werewolf Online):** Designed the
-    system architecture and developed the backend using Node.js with
-    real-time communication via WebSocket. Refined the `boardgameviet`
-    project structure, transforming it into a streamlined landing page
-    focused entirely on core user acquisition.
-    -   🔗 https://game.masoi.vn/
--   **INXIN.VN - Wholesale Printing E-commerce:** Built a modern
-    e-commerce web application to optimize order management. Integrated
-    Lark Suite Webhook API via Supabase Edge Functions for real-time
-    order notifications to the internal chat group.
-    -   🔗 https://inxin.vn/
--   **Online Tarot Ecosystem (Rainbow Game & Tarot The KAS):** Built a
-    web platform for automated tarot card drawing and AI-powered
-    interpretation. Developed display logic, result processing, and deep
-    AI API integration.
-    -   🔗 https://tarot.thekas.vn/ \|
-        https://rainbowgame.io/tarot-reading/three-card
+- Owned the design-to-production lifecycle and technical infrastructure of 30 websites, including landing pages, e-commerce products, and interactive web games.
+- Converted product and interface requirements into responsive React/Next.js experiences, reusable UI patterns, animations, backend services, and production deployments.
+- Built the main The KAS website with performance-focused, interactive UI/UX designed to support user acquisition.
+- Architected and developed Werewolf Online using Node.js and WebSocket for real-time gameplay, while reshaping the public-facing site around the product's core conversion journey.
+- Built INXIN.VN, a wholesale-printing e-commerce application, and connected Supabase Edge Functions with the Lark Suite Webhook API for real-time internal order notifications.
+- Developed the Online Tarot ecosystem, including card-selection flows, result-processing logic, responsive interfaces, and AI API integration for automated interpretations.
+- Profiled performance and prepared complete technical handover documentation for the 30-website system to support continued operation and maintenance.
 
-**Key responsibilities:** Architectural design, frontend development,
-UI/UX optimization, real-time feature integration, and performance
-profiling across the full product lifecycle. Successfully completed all
-technical handover documentation for the 30-website system to ensure
-seamless operations.
+**Selected products:** [The KAS](https://thekas.vn/) · [Werewolf Online](https://game.masoi.vn/) · [INXIN.VN](https://inxin.vn/) · [Online Tarot](https://tarot.thekas.vn/)
 
-*Core technologies: React, Next.js, Node.js, WebSocket, GSAP, Supabase,
-PostgreSQL.*
+**Core technologies:** React, Next.js, JavaScript, TypeScript, Node.js, WebSocket, GSAP, Supabase, PostgreSQL
 
-------------------------------------------------------------------------
+### Web Developer — Duni
 
-### Web Developer - Duni
+**June 2024 – April 2025**
 
-*June 2024 - April 2025*
+- Developed and maintained the [BYDUNI](https://byduni.com/) web product for a fashion business using QR and NFC technology.
+- Implemented responsive interfaces and backend APIs, and provided technical support for online marketing campaigns.
 
-Duni is a business providing fashion products integrated with QR code
-and NFC technology. Developed and maintained the BYDUNI website ---
-responsible for building the interface, engineering the backend API
-system, and directly supporting online marketing campaigns. \* 🔗
-https://byduni.com/
+**Core technologies:** React, Next.js, Node.js, REST APIs
 
-*Core technologies: React, Next.js, Node.js, REST API.*
+---
 
-------------------------------------------------------------------------
+## Selected Product Work
 
-## **Professional Skills**
+### The KAS Digital Ecosystem
 
-  -----------------------------------------------------------------------
-  Category                            Technologies
-  ----------------------------------- -----------------------------------
-  **Languages**                       JavaScript (2 years), TypeScript
+Delivered 30 web products across multiple formats and business goals as the sole fullstack developer. Worked across interface implementation, responsive behavior, interaction design, application logic, API integration, deployment, performance profiling, and technical handover.
 
-  **Frontend**                        React.js, Next.js, HTML5, CSS3,
-                                      Tailwind CSS, Material UI, GSAP
+### Werewolf Online
 
-  **Backend**                         Node.js, Express.js, RESTful API,
-                                      WebSocket
+Designed the application architecture and implemented a Node.js/WebSocket backend for a real-time digital board game. Connected gameplay requirements with the interface and supporting product journey.
 
-  **Database**                        PostgreSQL, Supabase
+### INXIN.VN
 
-  **State Management**                Redux, Zustand
+Built an e-commerce workflow for wholesale printing, including the customer-facing interface, order-management logic, database integration, and real-time operational notifications.
 
-  **Tools**                           Git, GitHub, Postman, Vercel,
-                                      Figma, Vite, Docker
+### Online Tarot
 
-  **Other**                           UI/UX Design, Performance
-                                      Optimization, Business Logic
-                                      Analysis
-  -----------------------------------------------------------------------
+Created a responsive tarot-reading experience covering card interaction, result processing, and AI-generated interpretations through an external AI API.
 
-------------------------------------------------------------------------
+---
 
-## **Education**
+## Education
 
-**Software Engineering - Bachelor's Degree** *Industrial University of
-Ho Chi Minh City (IUH), June 2021 - Present*
+**Bachelor of Software Engineering**<br>
+Industrial University of Ho Chi Minh City (IUH) · June 2021 – Present
 
-Combining rigorous technical coursework with social science concepts
-(anthropology, sociology) to analyze user behavior and design highly
-empathetic, user-centric web applications.
+Coursework and product work combine software engineering with user-centered thinking, including the study of human behavior and its application to accessible, empathetic digital experiences.
 
-------------------------------------------------------------------------
+---
 
-## **Languages**
+## Languages
 
--   **English:** Intermediate Proficiency --- good reading comprehension
-    of technical documentation and conversational communication.
--   **Vietnamese:** Native speaker.
+- **Vietnamese:** Native
+- **English:** Intermediate — comfortable reading technical documentation and communicating in everyday professional conversations

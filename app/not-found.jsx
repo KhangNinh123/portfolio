@@ -4,7 +4,7 @@ import { Center } from '@/components';
 export const metadata = {
   title: '404',
   description:
-    'Helping brands thrive in the digital world. Located in Vietnam. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Khang Ninh',
+    "The requested page could not be found on Trinh Khang Ninh's portfolio.",
 };
 
 export default function NotFound() {
